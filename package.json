@@ -6,7 +6,8 @@
         "start": "ts-node src/main.ts",
         "dev": "nodemon src/main.ts",
         "build": "tsc",
-        "lint": "prettier --write \"src/**/*.ts\""
+        "lint": "prettier --write \"src/**/*.ts\"",
+        "postinstall": "patch-package"
     },
     "engines": {
         "node": ">=12.5.0",
@@ -39,6 +40,8 @@
     },
     "devDependencies": {
         "nodemon": "3.0.1",
+        "patch-package": "^8.0.0",
+        "postinstall-postinstall": "^2.1.0",
         "prettier": "^3.0.0",
         "typescript": "5.3.3"
     }
